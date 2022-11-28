@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+}
+table {
+  border: solid 1px black;
+  width: 90%;
+  height: 50%;
+}
+tr {
+  border: solid 1px black;
+}
+td {
+  margin: ;
+  border: solid 1px black;
+}
+
+header {
+  background-color: #2eccfa;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
