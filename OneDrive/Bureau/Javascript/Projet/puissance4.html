@@ -7,19 +7,34 @@
     <link rel="stylesheet" href="puissance4.css" />
   </head>
   <body>
-    <header><h3>JEUX EN LIGNE</h3></header>
+    <header><h3>BIENVENUE SUR JEU GRATUIT.FR</h3></header>
     <nav>
       <a href="puissance4.html">Jouer</a>
       <a href="règle.html">Règles du jeu</a>
-      <a href="">Score</a>
     </nav>
+    <br />
+    <br />
     <article>
-      <h1>PUISSANCE 4</h1>
-      <div>
-        <table class="table"></table>
+      <h2 class="t2">
+        Jouer à puissance 4 <br />
+        avec vos amis !
+      </h2>
+      <div class="quiJoue"></div>
+      <br />
+      <div id="table">
+        <table></table>
       </div>
-      <center><button id="newGame">Nouvelle Partie</button></center>
+      <br />
+      <div class="gagnant"></div>
+      <center>
+        <button id="newGame">Nouvelle Manche</button>
+        <br />
+        <button id="reset">
+          <a href="puissance4.html">Recommencer</a>
+        </button>
+      </center>
     </article>
+
     <script type="text/javascript" src="/Projet/puissance4.js"></script>
   </body>
 </html>

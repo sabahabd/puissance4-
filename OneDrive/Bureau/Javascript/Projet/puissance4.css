@@ -1,18 +1,66 @@
 body {
   text-align: center;
+  background-image: url("manygb.png");
 }
+
+header {
+  background-color: #f0c568;
+  font-size: larger;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: white;
+  color: #ffb81f;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 25px;
+  width: 120px;
+}
+
+nav a:hover {
+  cursor: grab;
+  transform: scale(1.2);
+}
+
+.t2 {
+  display: block;
+  margin: auto;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffb81f;
+  font-weight: 800;
+  font-family: Verdana, sans-serif;
+  text-shadow: #fc0 1px 0 10px;
+  border: #ffb81f solid 1px;
+  border-radius: 10px;
+  width: 25%;
+  height: 8%;
+  background-color: white;
+}
+
 table {
   margin: auto;
   border: solid 5px navy;
   border-radius: 25px;
   background-color: blue;
 }
+
 tr {
   margin: auto;
   background-color: lightgray;
   height: 75px;
   border-radius: 50px;
 }
+
 td {
   margin: 5px;
   border: solid 5px navy;
@@ -29,24 +77,40 @@ td {
   background-color: yellow;
 }
 
-h1 {
-  color: #ffb81f;
-  font-weight: 800;
-  font-family: Verdana, sans-serif;
-  text-shadow: #fc0 1px 0 10px;
+#reset {
+  font-size: 15px;
+  height: 40px;
+  width: 120px;
+  display: block;
+  margin: auto;
+  background-color: #ffb81f;
+  border: solid #ffb81f;
+  border-radius: 10px;
 }
 
-header {
-  background-color: #f0c568;
-  color: white;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f0c568;
-}
-nav a {
+#reset a {
   text-decoration: none;
   color: white;
+}
+
+#reset:hover {
+  cursor: grab;
+  transform: scale(1.2);
+}
+
+#newGame {
+  font-size: 15px;
+  height: 40px;
+  width: 120px;
+  display: block;
+  margin: auto;
+  background-color: #ffb81f;
+  border: solid #ffb81f;
+  border-radius: 10px;
+  color: white;
+}
+
+#newGame:hover {
+  cursor: grab;
+  transform: scale(1.2);
 }

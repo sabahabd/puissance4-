@@ -71,3 +71,49 @@ function deposer(ligne, colonne) {
     }
   }
 }
+const iconx = "😀";
+
+const icono = "😛";
+
+function jouer(event) {
+  console.log(event.target.id);
+
+  const id = event.target.id;
+
+  const idinfo = id.split("-");
+
+  const ligne = Number(idinfo[1]);
+
+  const colonne = Number(idinfo[2]);
+
+  console.log(colonne, ligne);
+
+  const etatCelules = etatJeu.cellules[ligne][colonne];
+
+  if (etatCelules !== null) return;
+
+  const icon = etatJeu.joueur === "BLEU" ? iconx : icono;
+
+  event.target.textContent = icon;
+
+  etatJeu.cellules[ligne][colonne] = etatJeu.joueur;
+
+  etatJeu.joueur = etatJeu.joueur === "BLEU" ? "ROND" : "BLEU";
+}
+
+const cellules = document.querySelectorAll(".case");
+
+for (const cellule of cellules) {
+  cellule.addEventListener("click", jouer);
+}
+
+//let bouton = document.getElementById("newGame");
+//bouton.addEventListener("click", function () {
+//  lancePartie();
+//});
+
+//function lancePartie() {
+//etatJeu.cellules = creeTableau(ligne, colonne);
+//console.table(cellules);
+//deposer(ligne, colonne);
+//}
