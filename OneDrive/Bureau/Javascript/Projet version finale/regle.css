@@ -1,0 +1,28 @@
+#r1 {
+  display: blocks;
+  margin: auto;
+  align-items: center;
+  border: #ffb81f solid 1px;
+  border-radius: 10px;
+  width: 25%;
+  height: 8%;
+  background-color: white;
+  text-transform: uppercase;
+  color: #ffb81f;
+  font-weight: 800;
+  font-family: Verdana, sans-serif;
+  text-shadow: #fc0 1px 0 10px;
+}
+
+p {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  height: 40%;
+  color: white;
+  align-items: center;
+  font-size: 18px;
+  background-color: #ffb81f;
+  border: solid white;
+  border-radius: 10px;
+}
